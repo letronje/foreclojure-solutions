@@ -4,8 +4,8 @@
             (if (or (<= r 1) (= r c) (zero? c))
               1
               (+
-               (p (dec r) (dec c))
-               (p (dec r) c))))]
+               (pval (dec r) (dec c))
+               (pval (dec r) c))))]
     (map #(pval (dec n) %) (range n))))
 
 (fn prow [n]
